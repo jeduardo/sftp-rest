@@ -1,0 +1,17 @@
+[Unit]
+Description=SFTP REST Browser
+After=syslog.target network.target
+
+[Service]
+User=sftp-browser
+Group=sftp-browser
+WorkingDirectory=/srv/sftp-browser
+PIDFile=/var/run/sftp-browser.pid
+EnvironmentFile=-/etc/default/sftp-browser
+ExecStart=/srv/sftp-browser/sftp-browser
+ExecReload=/bin/kill $(cat /var/run/sftp-browser.pid) && /srv/sftp-browser/sftp-browser
+ExecStop=/bin/kill $(cat /var/run/sftp-browser.pid)
+
+[Install]
+WantedBy=multi-user.target
+
