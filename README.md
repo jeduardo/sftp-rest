@@ -3,9 +3,9 @@
 This software is a simple service allowing browsing a remote SFTP server through
 a simple REST interface.
 
-## Warnings
+## Warning
 
-* There is no security configured in the tool whatsoever. Please protect it with
+* There is no security configured or offered by the tool. Please protect it with
   whatever measures you deem necessary (HTTP auth, TLS mutual, etc) to avoid any
   kind of unauthorized access to your data while using this software.
 
