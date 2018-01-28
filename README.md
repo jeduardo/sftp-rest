@@ -122,7 +122,7 @@ It is *mandatory* to load the SSH host fingerprint of the remote host into the
 hosts file of the user that will be executing the service. This is not handled
 by the service itself.
 
-A systemd service file is provided with a deployment suggestion for the service.
+A systemd service file is provided as a deployment suggestion for the service.
 
 ## License
 
